@@ -57,7 +57,7 @@ if ( isset($argv[1]) )
 {
   $to = $argv[1];
   $subject = 'Traffic: ' . $counts['red'] . ' / ' . $counts['yellow'] . ' / ' . $counts['green'];
-  $html = '<html><body><pre>' . $msg . '</pre></body></html>'
+  $html = '<html><body><pre>' . $msg . '</pre></body></html>';
   mail($to, $subject, $html, "Mime-Version: 1.0\r\nContent-Type: text/html; charset=iso-8857-1\r\n");
 }
 else
