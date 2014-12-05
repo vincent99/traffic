@@ -73,14 +73,9 @@ function counts()
 {
   global $colors;
 
-  $counts = array();
+  $counts = array('red' => 0, 'yellow' => 0, 'green' => 0);
   foreach ( $colors as $color )
   {
-    if ( !isset($counts[$color]))
-    {
-      $counts[$color] = 0;
-    }
-
     $counts[$color]++;
   }
 
